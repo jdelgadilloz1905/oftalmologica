@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="22a29c0b-6fba-413a-942d-d308118de0b7" name="MI pagina web" url="http://jorgedelgadillo.com">
+        <fileTransfer host="jorgedelgadillo.com" port="21" username="jorgedel" password="dfc5dfc7dfcfdfc4dfcedfc0df9bdf9cdf9fdf93df92df9ddf93df9f">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="59b5c1c5-4e57-4c6e-92a0-e811531d5218" name="elestudio57/frontendret" url="http://elestudio57.com">
+        <fileTransfer host="elestudio57.com" port="21" rootFolder="/public_html/elestudio57.com/frontendret">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

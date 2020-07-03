@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Detalles del Proyecto</title>
+    <meta name="description" content="Jorge Luis Delgadillo Zuñiga, desarrollador de aplicaciones Web" />
+    <meta name="keywords" content="resumen, curriculo, portfolio, portafolio, creador, personal, cv, implementador, freelancer, soporte remoto, desarrollo, developer, one page, personal portfolio jorge delgadillo, php, javascript, jquery, ajax, frontend, backend, html,css, react, react native, node" />
+    <meta name="author" content="Jorge Delgadillo" />
+    <!--css file-->
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+
+<body>
+<main class="wrapper">
+    <!--Portfolio Details start-->
+    <div class="container portfolio-detials" id="portfolio-details">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div id="carouselwork" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/portfolio/trop/t1.jpg" class="d-block w-100" alt="portfolio-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/portfolio/trop/t2.jpg" class="d-block w-100" alt="portfolio-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/portfolio/trop/t3.jpg" class="d-block w-100" alt="portfolio-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/portfolio/trop/t4.jpg" class="d-block w-100" alt="portfolio-image">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselwork" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselwork" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="details-text text-justify py-3">
+                    <h3>Detalle del Proyecto</h3>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><i class="icon-user"></i><span class="client">Cliente</span> : <span class="client-name">Trop</span></li>
+                        <li><i class="icon-layers"></i> <span class="start"> Categoría </span> : <span class="start-date">Aplicación Web (Frontend y Backend)</span></li>
+                        <!--<li><i class="icon-call-end"></i><span class="end">End Date</span> : <span class="end-date">10/03/19</span></li>-->
+                    </ul>
+                    <p>
+                        Es una aplicación donde los publicadores tienen la posibilidad de enviar cualquier cosa que te imagines, con transportistas independientes de una manera rapida, facil y seguro.
+                    </p>
+                    <a href="https://www.trop.com.ar/" class="btn btn-primary-outline mt-4">Leer más</a>
+                </div>
+            </div>
+        </div>
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </div>
+    <!--Portfolio Details end-->
+</main>
+
+<!--Ashton JS-->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script>
+    $(function() {
+        $('.carousel').carousel({
+            interval: 4000,
+            pause: false
+        });
+    });
+
+</script>
+</body>
+
+</html>

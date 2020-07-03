@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d5960437-579f-4fce-a817-4ff4e05c8dae" name="Oftalmologica" url="http://ftp.oftalmologica.com">
+        <fileTransfer host="ftp.oftalmologica.com" port="21" password="dffadfcbdfd9dfd9dfdddfc5dfd8dfcedf9adf9bdf84" username="jdelgadillo@oftalmologica.com">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="05a9e0e7-b3e4-4465-9cf0-4cb4aa32aa81" name="citasOnline" url="http://192.168.3.2:8082">
+        <fileTransfer host="192.168.3.2" port="22" rootFolder="/var/www/" accessType="SFTP" username="sistemas">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
