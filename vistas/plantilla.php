@@ -68,7 +68,7 @@ $url = Rutas::ctrRutas();
 
         $valor =  $rutas[0];
         include "modulos/header2.php";
-        if($rutas[0] == "especialistas" || $rutas[0] == "sms" || $rutas[0] == "soporteUoca"){
+        if($rutas[0] == "especialistas" || $rutas[0] == "sms" || $rutas[0] == "soporteUoca" || $rutas[0] == "suscriptores"){
           include "modulos/".$rutas[0].".php";
         }else{
           include "modulos/error404.php";
