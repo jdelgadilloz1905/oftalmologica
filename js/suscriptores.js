@@ -11,7 +11,7 @@ $(document).ready(function(){
             ],
             "ajax":
                 {
-                    url: rutaOculta+'ajax/especialistas.php',
+                    url: rutaOculta+'ajax/suscriptores.php',
                     type : "get",
                     dataType : "json",
                     error: function(e){
@@ -19,7 +19,7 @@ $(document).ready(function(){
                     }
                 },
             "bDestroy": true,
-            "iDisplayLength": 5,//Paginación
+            "iDisplayLength": 20,//Paginación
             "order": [[ 0, "desc" ]]//Ordenar (columna,orden)
         }).DataTable();
 

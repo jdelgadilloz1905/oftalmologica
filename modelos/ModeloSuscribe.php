@@ -33,4 +33,17 @@ class ModeloSuscribe{
 
     }
 
+    static public function mdlMostrarRegistrosSuscriptores($table){
+
+        $stmt = Conexion::conectar()->prepare("SELECT * FROM $table order by id desc ");
+
+        $stmt->execute();
+
+        return $stmt->fetchAll();
+
+        $stmt->close();
+
+        $stmt = null;
+    }
+
 }

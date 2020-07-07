@@ -115,6 +115,7 @@ $url = Rutas::ctrRutas();
 
 
   <script src="<?php echo $url; ?>js/especialistas.js"></script>
+  <script src="<?php echo $url; ?>js/suscriptores.js"></script>
   <script src="<?php echo $url; ?>js/sms.js"></script>
   <script src="<?php echo $url; ?>js/plantilla.js"></script>
   <script>

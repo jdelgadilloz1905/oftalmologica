@@ -7,7 +7,6 @@
 
   $url = Rutas::ctrRutas();
 
-  $doctores = ControladorEstudio::strDoctores();
   ?>
   <br><br><br><br><br>
   <section id="especialidad" class="especialidad">
@@ -30,6 +29,7 @@
                   <thead>
                     <th>id</th>
                     <th>Email</th>
+                    <th>Fecha creacion</th>
 
                   </thead>
                   <tbody>
@@ -37,6 +37,7 @@
                   <tfoot>
                   <th>id</th>
                   <th>Email</th>
+                  <th>Fecha creacion</th>
                   </tfoot>
                 </table>
               </div>
