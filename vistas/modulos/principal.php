@@ -33,7 +33,7 @@ $url = Rutas::ctrRutas();
                 </div>
                 <div class="col-md-5 col-xs-12 imagenOcultar">
                     <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                        <img src="<?php echo $url ?>img/citas_oftalmologica.jpg" class="img-responsive" alt=""/>
+                        <img style="height: 525px !important;" src="<?php echo $url ?>img/citas_oftalmologica.jpg" class="img-responsive" alt=""/>
                     </div>
                 </div>
             </div>
