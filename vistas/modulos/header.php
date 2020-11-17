@@ -30,17 +30,11 @@
                 <li><a href="#service">Servicios</a></li>
                 <li><a href="#especialistas">Especialistas</a></li>
                 <li><a href="#estudios">Estudios Especiales</a></li>
+                <li><a href="#estudios">Cirugías</a></li>
                 <li><a href="#facilities">Instalaciones</a></li>
                 <li><a href="#cita">Cita</a></li>
 
-                <li class="dropdown"  style="display: none">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>More <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="plantilla.php">Home CTA</a></li>
-                        <li><a href="<?php echo $url; ?>index-form.html">Home Form</a></li>
-                        <li><a href="<?php echo $url; ?>index-video.html">Home video</a></li>
-                    </ul>
-                </li>
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
