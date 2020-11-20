@@ -1,3 +1,6 @@
+
+
+
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
 -- Versión del servidor:         10.4.11-MariaDB - mariadb.org binary distribution
