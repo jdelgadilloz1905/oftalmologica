@@ -30,7 +30,7 @@
                 <li><a href="#service">Servicios</a></li>
                 <li><a href="#especialistas">Especialistas</a></li>
                 <li><a href="#estudios">Estudios Especiales</a></li>
-                <li><a href="#estudios">Cirugías</a></li>
+                <li><a href="#cirugias">Cirugías</a></li>
                 <li><a href="#facilities">Instalaciones</a></li>
                 <li><a href="#cita">Cita</a></li>
 
