@@ -2,7 +2,7 @@
 /**
  * Libreria de Integracion CentauroSMS v1.2
  * API para Integracion de Envios de SMS a cualquier Aplicacion Web
- * 
+ *
  * @autor Hernan Crespo
  *
  */
@@ -21,38 +21,38 @@ class CentauroSMS {
      * Obtener numero de SMS disponibles
      */
     public function get_sms_disponibles() {
-       $credenciales = $this->cParametros(array(
+        $credenciales = $this->cParametros(array(
             'client_id' => $this->client_id,
             'client_secret' => $this->client_secret,
-			'client_opcion' => 'sms_disponibles'));
+            'client_opcion' => 'sms_disponibles'));
 
-       return $result_data = cSMSClient::post("/controllersms/", $credenciales, "application/x-www-form-urlencoded");		
+        return $result_data = cSMSClient::post("/controllersms/", $credenciales, "application/x-www-form-urlencoded");
     }
     /**
      * Envio de SMS Masivos normales
-     */    
+     */
     public function set_sms_send($json,$msg) {
-       $credenciales = $this->cParametros(array(
+        $credenciales = $this->cParametros(array(
             'client_id' => $this->client_id,
             'client_secret' => $this->client_secret,
-			'json' => base64_encode(urlencode($json)),
-			'msg' => base64_encode(urlencode($msg)),
-			'client_opcion' => 'send_sms'));
+            'json' => base64_encode(urlencode($json)),
+            'msg' => base64_encode(urlencode($msg)),
+            'client_opcion' => 'send_sms'));
 
-       return $result_data = cSMSClient::post("/controllersms/", $credenciales, "application/x-www-form-urlencoded");		
+        return $result_data = cSMSClient::post("/controllersms/", $credenciales, "application/x-www-form-urlencoded");
     }
     /**
      * Envio de SMS Masivos personalizados
-     */     	
+     */
     public function set_sms_send_personalizado($json){
-       $credenciales = $this->cParametros(array(
+        $credenciales = $this->cParametros(array(
             'client_id' => $this->client_id,
             'client_secret' => $this->client_secret,
             'json' => base64_encode(urlencode($json)),
             'client_opcion' => 'send_sms_personalizado'));
 
-       return $result_data = cSMSClient::post("/controllersms/", $credenciales, "application/x-www-form-urlencoded");     
-    }  
+        return $result_data = cSMSClient::post("/controllersms/", $credenciales, "application/x-www-form-urlencoded");
+    }
     private function cParametros($params) {
         if (function_exists("http_build_query")) {
             return http_build_query($params, "", "&");
@@ -62,8 +62,8 @@ class CentauroSMS {
             }
             return implode("&", $elements);
         }
-    }	
-	
+    }
+
 }
 
 /**
@@ -71,10 +71,12 @@ class CentauroSMS {
  */
 class cSMSClient{
 
-    const API_BASE_URL = "http://api.centaurosms.com.ve";
+    const API_BASE_URL = "https://api.centaurosms.com.ve";
 
     private static function get_connect($uri, $method, $content_type) {
         $connect = curl_init(self::API_BASE_URL . $uri);
+        curl_setopt($connect, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($connect, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($connect, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($connect, CURLOPT_CUSTOMREQUEST, $method);
         curl_setopt($connect, CURLOPT_HTTPHEADER, array("Accept: application/json", "Content-Type: " . $content_type));
@@ -96,14 +98,14 @@ class cSMSClient{
             }
         }
         curl_setopt($connect, CURLOPT_POSTFIELDS, $data);
-    }	
+    }
     private static function exec($method, $uri, $data, $content_type) {
         $connect = self::get_connect($uri, $method, $content_type);
         if ($data) {
             self::set_data($connect, $data, $content_type);
-        }		
+        }
         $api_result = curl_exec($connect);
-        $response = json_decode($api_result, true);		
+        $response = json_decode($api_result, true);
         curl_close($connect);
         return $response;
     }
