@@ -47,11 +47,15 @@ class ControladorSms
                 fclose($fp);
 
                 if($result["status"]=="200"){
+
+                    //CONSULTO LA CANTIDAD DE MENSAJES DISPONIBLE
+                    $SMS_disponibles = $SMS->get_sms_disponibles();
+
                     echo '<script>
 
 							swal({
 								  title: "¡OK!",
-								  text: "¡Excelente se ha enviado un total de '.$cont.'",
+								  text: "¡Excelente se ha enviado un total de '.$cont.', le resta una cantidad de '.$SMS_disponibles['response']['sms_disponibles'].'",
 								  type:"success",
 								  confirmButtonText: "Cerrar",
 								  closeOnConfirm: false
