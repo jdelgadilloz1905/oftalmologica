@@ -34,7 +34,7 @@ class ControladorSms
                     $porc = explode("#",$linea);
                     //echo $porc[0];
                     //echo $porc[1];
-                    $destinatario = array("id" => "0","cel" => trim($porc[0]),"nom" => trim($porc[0]),"msg" => trim($porc[1]));
+                    $destinatario = array("id" => $cont,"cel" => trim($porc[0]),"nom" => trim($porc[0]),"msg" => trim($porc[1]));
 
                     $js = json_encode($destinatario);
                     $result = $SMS->set_sms_send_personalizado($js); // Comando para enviar SMS Personalizados
