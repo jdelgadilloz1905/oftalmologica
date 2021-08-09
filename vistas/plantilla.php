@@ -83,6 +83,7 @@ $url = Rutas::ctrRutas();
 
     include "modulos/footer.php"
     ?>
+
   </div>
   <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 

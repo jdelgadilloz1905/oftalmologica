@@ -1,4 +1,8 @@
+<?php
 
+$url = Rutas::ctrRutas();
+
+?>
 <footer>
 
     <div class="container">
@@ -50,7 +54,14 @@
                           <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                     </span> informacion@oftalmologica.com
                             </li>
-
+                            <li>
+                    <span class="fa-stack fa-lg">
+                         <a href="https://api.whatsapp.com/send?phone=584241269930" target="_blank">
+                            <img src="<?php echo $url ?>img/whatsapp_icono.jpg" alt="" style="margin-left:1px; height: 40px">
+                          </a>
+                    </span> WhatsApp Business</i>
+                            </li>
+                            <br>
                             <li>
                                 <div class="form-group">
 
@@ -82,10 +93,12 @@
                             <li class="social-facebook"><a href="http://www.facebook.com/UnidadOftalmologicaDeCCS" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li class="social-twitter"><a href="http://twitter.com/UnidadOftDeCCS" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li class="social-dribble"><a href="http://instagram.com/unidadoftalmologicadeccs" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
                             <li class="social-google" style="display: none;"><a href="#"><i class="fa fa-google-plus" target="_blank"></i></a></li>
                             <li class="social-vimeo" style="display: none;"><a href="#"><i class="fa fa-vimeo-square" target="_blank"></i></a></li>
                             <li class="social-dribble" style="display: none;"><a href="#"><i class="fa fa-dribbble" target="_blank"></i></a></li>
                         </ul>
+
                     </div>
                 </div>
             </div>
@@ -158,4 +171,5 @@
         </div>
 
     </div>
+
 </div>

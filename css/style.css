@@ -2134,3 +2134,31 @@ a.btn:focus{
         display: none !important;
     }
 }
+
+.icon_whatsapp_tienda
+{
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0bd561;
+    box-shadow: 0px 3px 12px grey;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.icon_whatsapp_tienda:hover,
+.icon_whatsapp_tienda:focus
+{
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    color: #fff;
+}

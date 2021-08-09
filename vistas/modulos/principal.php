@@ -33,7 +33,10 @@ $url = Rutas::ctrRutas();
                 </div>
                 <div class="col-md-5 col-xs-12 imagenOcultar">
                     <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                        <img style="height: 525px !important;" src="<?php echo $url ?>img/storie2.jpg" class="img-responsive" alt=""/>
+                        <a href="https://api.whatsapp.com/send?phone=584241269930" target="_blank">
+
+                        <img style="height: 500px !important;" src="<?php echo $url ?>img/historia-Laser-slt.png" class="img-responsive" alt=""/>
+                        </a>
                     </div>
                 </div>
             </div>
